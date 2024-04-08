@@ -27,6 +27,6 @@ Note: The `DatabaseSeed.sql` script is run at startup, if the file `Database.db`
 
 ## Running in Codespaces
 
-1. **📤 One-click setup**: [Open a new Codespace](https://codespaces.new/github/dotnet-codespaces), giving you a fully configured cloud developer environment.
+1. **📤 One-click setup**: [Open a new Codespace](https://codespaces.new/eldahl/AuthorizationAssignment), giving you a fully configured cloud developer environment.
 2. **▶️ Run all, one-click again**: Use VS Code's built-in *Run* command and open the forwarded ports *8080* and *8081* in your browser. 
 ![](images/RunAll.png)
