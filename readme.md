@@ -13,13 +13,46 @@ Credentials are:
 |JournalistUser|JournalistPassword|
 |RegisteredUser|RegisteredPassword|
 
-`/login` JSON Format:
+POST `/login` JSON Format:
 ```
 {
   "username": "JournalistUser",
   "password": "JournalistPassword"
 }
 ```
+POST `/createComment` (Roles: Registered) JSON Format:
+```
+{
+  "content": "Text goes here"
+}
+```
+POST `/createArticle` (Roles: Journalist) JSON Format:
+```
+{
+  "title": "Text goes here",
+  "content": "Text goes here"
+}
+```
+PUT `/editArticle` (Roles: Journalist, Editor) JSON Format:
+```
+{
+  "articleId": 1,
+  "title": "Text goes here",
+  "content": "Text goes here"
+}
+```
+PUT `/editComment` (Roles: Editor) JSON Format:
+```
+{
+  "commentId": 1,
+  "content": "Text goes here"
+}
+```
+DELETE `/deleteArticle?articleId=1` (Roles: Editor)  
+DELETE `/deleteComment?commentId=1` (Roles: Editor)  
+
+GET `/getRole` (Roles: Anonymous)  
+GET `/getArticle?articleId=1` (Roles: Anonymous)
 
 All routes can be found in the ![RoutesController.cs](SampleApp/BackEnd/RoutesController.cs) file.
 
