@@ -1,6 +1,6 @@
 # Authorization Assignment
 This is a small assignment to demonstrate how to do authentication using JWTs.  
-See assignment description here: ![Secure Software](https://rpede.github.io/SecureSoftwareDevelopment/assignments/authorization)
+See assignment description here: [Secure Software](https://rpede.github.io/SecureSoftwareDevelopment/assignments/authorization)
 
 ## Instructions for testing functionality
 Run the project and either use the built in Swagger tool in Development mode, or use an external tool to run a POST request at `/login`.
